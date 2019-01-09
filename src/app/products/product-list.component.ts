@@ -21,7 +21,7 @@ export class ProductListComponent implements OnInit{
         this._listFilter = value;
         this.filteredProducts = this.listFilter ? this.performFilter(this.listFilter) : this.products;
     }
-    products:IProduct[] = [{
+    products: IProduct[] = [{
         "productId": 2,
         "productName": "Garden cart",
         "productCode": "FGN-3941",

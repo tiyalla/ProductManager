@@ -42,7 +42,7 @@
                                 [style.height.px]= 'imageWidth'>
                             </td>
                             <td>{{product.productName}}</td>
-                            <td>{{product.productCode}}</td>
+                            <td>{{product.productCode | lowercase |convertToSpaces:'-'}}</td>
                             <td>{{product.releaseDate}}</td>
                             <td>{{product.price | currency: 'USD':'symbol'}}</td>
                             <td>{{product.starRating}}</td>
