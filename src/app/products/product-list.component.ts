@@ -14,6 +14,7 @@ export class ProductListComponent implements OnInit{
     showImage: boolean = false;
     _listFilter: string;
     filteredProducts: IProduct[];
+
     get listFilter(): string{
         return this._listFilter;
     }
@@ -39,7 +40,7 @@ export class ProductListComponent implements OnInit{
         "releaseDate": "March 18, 2015",
         "description": "15 gallon a month" ,
         "price": 32.99,
-        "starRating": 4.2,
+        "starRating": 3.9,
         "imageUrl": "https://openclipart.org/detail/6960/modern-chair-34-angle"
 
     }];
