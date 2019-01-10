@@ -10,8 +10,8 @@ import { ProductService } from './product.service';
 
 export class ProductListComponent implements OnInit{
     title = 'Product List';
-    imageHeight: 400;
-    imageWidth: 400;
+    imageWidth = 50;
+    imageMargin = 2;
     showImage: boolean = false;
     _listFilter: string;
     filteredProducts: IProduct[];
@@ -24,7 +24,7 @@ export class ProductListComponent implements OnInit{
         this.filteredProducts = this.listFilter ? this.performFilter(this.listFilter) : this.products;
     }
     products: IProduct[] = [];
-    
+
    //Dependency Injection
     constructor(private productService: ProductService){
         
